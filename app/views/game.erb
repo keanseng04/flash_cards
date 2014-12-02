@@ -1,0 +1,11 @@
+<div class="container">
+
+  <table>
+   <p>Select your destiny!</p>
+  <td>
+    <% @decks.each do |deck| %>
+    <a href="/game/<%= deck.id %>"> Rubylize me!</td></a>
+    <% end %>
+  </table>
+
+</div>

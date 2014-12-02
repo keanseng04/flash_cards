@@ -1,0 +1,23 @@
+<div class="container">
+
+<table>
+
+    <tr>
+      <td>
+</br>
+          <form action="/results" method = "post">
+        <% @cards.each do |card|%>
+
+        <%= card.question %>
+          <p>Answer: <input type="text" name="card[<%= card.id %>]"></p>
+          <% end %>
+          <p><input type="submit" value="ENTER"></td></p>
+        </form>
+        </td>
+    </tr>
+
+</table>
+
+</div>
+
+<!-- params[:card][i.to_s] -->
